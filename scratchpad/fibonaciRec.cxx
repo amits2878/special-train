@@ -22,6 +22,11 @@ int main () {
 	int sumNum = 12345;
 	int mulNum = 45, nTimes = 4;
 	int arrEle = 6;
+
+int fibo (int) ;
+int main () {
+	int n =10;
+	int count = 0;
 	while ( count <= n) {
 		cout << endl << fibo (count);
 		count++;
@@ -89,6 +94,13 @@ bool isArrSorted (int a[], int nEle) {
 	       return isArrSorted (a+1, nEle-1);
 	else 
 		return false;
+
+	return 0;
+}
+
+int fibo (int fn) {
+	int fnNum;
+	return fnNum = (fn <= 1) ? fn : fibo(fn-2)+fibo(fn-1);
 }
 
 
