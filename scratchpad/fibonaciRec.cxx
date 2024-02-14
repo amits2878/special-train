@@ -1,4 +1,7 @@
 /*recurrsion - 12/25/2025*/
+=======
+
+
 
 #include <iostream>
 using namespace std;
@@ -22,11 +25,18 @@ int main () {
 	int sumNum = 12345;
 	int mulNum = 45, nTimes = 4;
 	int arrEle = 6;
-	while ( count <= n) {
+
+int fibo (int) ;
+int main () {
+	int n =10;
+	int count = 0;
+
+  while ( count <= n) {
 		cout << endl << fibo (count);
 		count++;
 	}
-	int myfactorial = facto (fact);
+
+  int myfactorial = facto (fact);
 	cout << endl << "Factorial: " << fact << 
 		" = " << myfactorial << endl;
 
@@ -89,6 +99,12 @@ bool isArrSorted (int a[], int nEle) {
 	       return isArrSorted (a+1, nEle-1);
 	else 
 		return false;
+	return 0;
+}
+
+int fibo (int fn) {
+	int fnNum;
+	return fnNum = (fn <= 1) ? fn : fibo(fn-2)+fibo(fn-1);
 }
 
 
