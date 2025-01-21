@@ -11,7 +11,7 @@ int main () {
 	t.b = 20;
 	t.c = 30;
 	cout << endl << ptr.a << " " << ptr.b << " " <<ptr.c << endl;
-	//&ptr = t;
-	//cout << ptr->a << " " << ptr->b << " " << ptr->c << endl;
+	///&ptr = t;
+	///cout << ptr->a << " " << ptr->b << " " << ptr->c << endl;
 	return 0;
 }
